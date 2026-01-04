@@ -3,152 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حي الصناعي الكبير</title>
-
+    <title>حي الصناعية الكبير | المنصة الصناعية الأولى</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
-            margin: 0;
-            font-family: "Cairo", sans-serif;
-            background: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(135deg, #0b5394, #073763);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-            font-weight: bold;
-        }
-
-        header p {
-            margin-top: 10px;
-            font-size: 20px;
-            opacity: 0.9;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .section-title {
-            font-size: 26px;
-            margin-bottom: 15px;
-            color: #0b5394;
-        }
-
-        .features {
-            display: grid;
-            gap: 20px;
-        }
-
-        .feature {
-            background: #eef3f9;
-            padding: 20px;
-            border-radius: 10px;
-            border-right: 6px solid #0b5394;
-        }
-
-        .feature h3 {
-            margin: 0 0 10px;
-            font-size: 22px;
-            color: #073763;
-        }
-
-        .footer-links {
-            margin-top: 25px;
-            text-align: center;
-        }
-
-        .footer-links a {
-            display: block;
-            margin: 8px 0;
-            color: #0b5394;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            margin-top: 40px;
-            background: #073763;
-            color: white;
-            text-align: center;
-            padding: 18px;
-            font-size: 14px;
-        }
+        body { font-family: 'Cairo', sans-serif; background-color: #fcfcfc; }
+        .hero { background: linear-gradient(135deg, #0d47a1 0%, #072d61 100%); color: white; padding: 100px 0; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; }
+        .card-feature { border: none; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card-feature:hover { transform: translateY(-10px); }
+        .icon-circle { width: 80px; height: 80px; background: #e3f2fd; color: #0d47a1; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 30px; }
+        .footer { background: #1a1a1a; color: #d1d1d1; padding: 40px 0; margin-top: 60px; }
+        .footer a { color: #fff; text-decoration: none; font-size: 14px; margin: 0 10px; }
     </style>
 </head>
-
 <body>
 
-    <header>
-        <h1>حي الصناعي الكبير</h1>
-        <p>أكبر مجتمع لخدمات صيانة السيارات في العراق</p>
+    <header class="hero text-center">
+        <div class="container">
+            <i class="fas fa-tools mb-4" style="font-size: 60px; color: #ffca28;"></i>
+            <h1 class="display-4 fw-bold">تطبيق حي الصناعية الكبير</h1>
+            <p class="lead">حلول الصيانة المتكاملة في جيبك. نربطك بأفضل الورش والفنيين بضغطة زر.</p>
+            <div class="mt-4">
+                <a href="#" class="btn btn-warning btn-lg px-5 fw-bold rounded-pill"> <i class="fab fa-google-play"></i> تحميل قريباً</a>
+            </div>
+        </div>
     </header>
 
-    <div class="container">
-
-        <h2 class="section-title">ماذا يقدم لك التطبيق؟</h2>
-
-        <div class="features">
-
-            <div class="feature">
-                <h3>تسجيل حساب شخصي</h3>
-                <p>إنشاء حساب يحتوي على معلومات الورشة أو المحل بالإضافة إلى رقم الهاتف والعنوان.</p>
+    <section class="container my-5">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card h-100 p-4 card-feature">
+                    <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                    <h4>الخريطة التفاعلية</h4>
+                    <p>حدد موقع أقرب ورشة إليك بدقة وسهولة عبر نظام خرائط متطور.</p>
+                </div>
             </div>
-
-            <div class="feature">
-                <h3>تحديد موقع الورشة على الخريطة</h3>
-                <p>تثبيت موقع الورشة على خريطة OpenStreetMap ليسهل وصول الزبائن إليك.</p>
+            <div class="col-md-4">
+                <div class="card h-100 p-4 card-feature">
+                    <div class="icon-circle"><i class="fas fa-user-check"></i></div>
+                    <h4>فنيون معتمدون</h4>
+                    <p>تواصل مباشرة مع أصحاب الورش وشاهد تقييماتهم وصور أعمالهم السابقة.</p>
+                </div>
             </div>
-
-            <div class="feature">
-                <h3>رفع صور الورشة أو الخدمات</h3>
-                <p>تحميل صور عالية الجودة يتم حفظها مباشرة في Cloudinary.</p>
+            <div class="col-md-4">
+                <div class="card h-100 p-4 card-feature">
+                    <div class="icon-circle"><i class="fas fa-users-cog"></i></div>
+                    <h4>منتدى تفاعلي</h4>
+                    <p>شارك تجاربك، اطرح استفساراتك الفنية، وتفاعل مع مجتمع الصناعية.</p>
+                </div>
             </div>
-
-            <div class="feature">
-                <h3>منتدى تفاعلي</h3>
-                <p>مشاركة صور، ردود، وإعلانات بين جميع المتخصصين في الصيانة.</p>
-            </div>
-
-            <div class="feature">
-                <h3>إعلانات مدفوعة</h3>
-                <p>إمكانية ترويج إعلانك داخل التطبيق للوصول إلى عدد أكبر من المستخدمين.</p>
-            </div>
-
-            <div class="feature">
-                <h3>طرق تواصل متعددة</h3>
-                <p>إمكانية التواصل عبر الهاتف أو واتساب مباشرة من داخل التطبيق.</p>
-            </div>
-
         </div>
+    </section>
 
-        <div class="footer-links">
-            <a href="privacy.html">سياسة الخصوصية</a>
-            <a href="terms.html">شروط الاستخدام</a>
-            <a href="delete-account.html">حذف الحساب</a>
-            <a href="mailto:hussein7315@gmail.com">التواصل عبر الإيميل</a>
+    <footer class="footer text-center">
+        <div class="container">
+            <p>© 2026 تطبيق حي الصناعي الكبير - جميع الحقوق محفوظة</p>
+            <div class="mb-3">
+                <a href="privacy.html">الخصوصية</a>
+                <a href="terms.html">الشروط</a>
+                <a href="delete-account.html">حذف الحساب</a>
+            </div>
         </div>
-
-    </div>
-
-    <footer>
-        © 2025 جميع الحقوق محفوظة – تطبيق حي الصناعي الكبير
     </footer>
 
 </body>
